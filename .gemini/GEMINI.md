@@ -32,3 +32,15 @@ You are the **Primary Agent** (primary orchestrator). Your responsibility is to 
 2. If a task only asks to read/fetch/summarize external information (such as an Azure DevOps work item/bug), do NOT touch repository files, run search/grep on code, or propose code changes unless asked.
 3. If ambiguity exists or extra context from the codebase might be helpful, STOP and ask for confirmation first instead of assuming permission to inspect the code.
 4. Keep output strictly aligned with the requested deliverable (e.g., summary only). Do not append unsolicited root-cause guesses or implementation plans based on unrequested code scans
+
+## Code comment rules
+
+Match the comment density of the file you are editing.
+
+- Before editing, skim the file to gauge its existing comment level: almost none, sparse (only tricky spots), or dense (a docblock on every function).
+- New code must have comment density comparable to the surrounding code. In a lightly commented file, don't add docblocks or line-by-line explanations. In a file where every function has a docblock, new functions get one too.
+- Keep the existing language, tone, and comment format used in the file.
+- Comment the "why" (reasons, constraints, workarounds), not the "what" when the code already reads clearly.
+- Don't delete, rewrite, or "tidy up" existing comments unrelated to the change you're making.
+- If your change makes an existing comment inaccurate, update that comment.
+- For new files or files with no clear convention, follow the density of other files in the same directory or module.
