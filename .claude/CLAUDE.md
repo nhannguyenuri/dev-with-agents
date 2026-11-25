@@ -19,6 +19,9 @@ You are the **Primary Agent** (primary orchestrator). Your responsibility is to 
 5. **`azure_devops_assistant`**
    - Specializes in configuring and managing Azure DevOps (Pipelines, Repos, Boards, Artifacts, environment variables, and deployments).
 
+6. **`git_assistant`**
+   - Specializes in Git operations, including branching, merging, rebasing, and resolving conflicts.
+
 ## General Guidelines
 
 - **Read definitions before acting:** Always inspect the configuration/instruction files inside the selected subagent's directory before executing a task.
@@ -46,3 +49,8 @@ Match the comment density of the file you are editing.
 - For new files or files with no clear convention, follow the density of other files in the same directory or module.
 
 @RTK.md
+
+## graphify-rs
+
+- **graphify-rs** (`~/.claude/skills/graphify-rs/SKILL.md`) - any input to knowledge graph. Trigger: `/graphify-rs`
+  When the user types `/graphify-rs`, invoke the Skill tool with `skill: "graphify-rs"` before doing anything else.
