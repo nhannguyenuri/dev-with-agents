@@ -47,3 +47,8 @@ Match the comment density of the file you are editing.
 - Don't delete, rewrite, or "tidy up" existing comments unrelated to the change you're making.
 - If your change makes an existing comment inaccurate, update that comment.
 - For new files or files with no clear convention, follow the density of other files in the same directory or module.
+
+## graphify-rs
+
+- **graphify-rs** (`~/.gemini/config/skills/graphify-rs/SKILL.md`) - any input to knowledge graph. Trigger: `/graphify-rs`
+  When the user types `/graphify-rs`, invoke the Skill tool with `skill: "graphify-rs"` before doing anything else.
